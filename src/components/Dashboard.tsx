@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+          className={activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)')}
         >
-          User Authentication & Onboarding
+          Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)
         </button>
         <button 
-          className={activeTab === 'advanced_calculation_capabilities' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_calculation_capabilities')}
+          className={activeTab === 'scientific_calculator_functions_(trigonometric,_logarithmic,_etc.)' ? 'active' : ''}
+          onClick={() => setActiveTab('scientific_calculator_functions_(trigonometric,_logarithmic,_etc.)')}
         >
-          Advanced Calculation Capabilities
+          Scientific Calculator Functions (Trigonometric, Logarithmic, Etc.)
         </button>
         <button 
-          className={activeTab === 'data_analytics_and_visualization' ? 'active' : ''}
-          onClick={() => setActiveTab('data_analytics_and_visualization')}
+          className={activeTab === 'graphing_capabilities_for_visual_representation_of_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_capabilities_for_visual_representation_of_functions')}
         >
-          Data Analytics And Visualization
+          Graphing Capabilities For Visual Representation Of Functions
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_onboarding' && (
+        {activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' && (
           <div className="tab-content">
-            <h2>User Authentication & Onboarding</h2>
-            <p>Manage your user authentication & onboarding here.</p>
+            <h2>Basic arithmetic operations (addition, subtraction, multiplication, division)</h2>
+            <p>Manage your basic arithmetic operations (addition, subtraction, multiplication, division) here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_calculation_capabilities' && (
+        {activeTab === 'scientific_calculator_functions_(trigonometric,_logarithmic,_etc.)' && (
           <div className="tab-content">
-            <h2>Advanced Calculation Capabilities</h2>
-            <p>Manage your advanced calculation capabilities here.</p>
+            <h2>Scientific calculator functions (trigonometric, logarithmic, etc.)</h2>
+            <p>Manage your scientific calculator functions (trigonometric, logarithmic, etc.) here.</p>
           </div>
         )}
 
-        {activeTab === 'data_analytics_and_visualization' && (
+        {activeTab === 'graphing_capabilities_for_visual_representation_of_functions' && (
           <div className="tab-content">
-            <h2>Data Analytics and Visualization</h2>
-            <p>Manage your data analytics and visualization here.</p>
+            <h2>Graphing capabilities for visual representation of functions</h2>
+            <p>Manage your graphing capabilities for visual representation of functions here.</p>
           </div>
         )}
       </div>
