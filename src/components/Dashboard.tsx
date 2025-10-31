@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_profiles' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_profiles')}
+          className={activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)')}
         >
-          User Authentication & Profiles
+          Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)
         </button>
         <button 
-          className={activeTab === 'basic_&_advanced_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_&_advanced_calculations')}
+          className={activeTab === 'advanced_calculations_(square_roots,_exponents,_logarithms)' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_calculations_(square_roots,_exponents,_logarithms)')}
         >
-          Basic & Advanced Calculations
+          Advanced Calculations (Square Roots, Exponents, Logarithms)
         </button>
         <button 
-          className={activeTab === 'analytics_dashboard' ? 'active' : ''}
-          onClick={() => setActiveTab('analytics_dashboard')}
+          className={activeTab === 'data_visualization_(graphs_and_charts_for_insights)' ? 'active' : ''}
+          onClick={() => setActiveTab('data_visualization_(graphs_and_charts_for_insights)')}
         >
-          Analytics Dashboard
+          Data Visualization (Graphs And Charts For Insights)
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_profiles' && (
+        {activeTab === 'basic_arithmetic_operations_(addition,_subtraction,_multiplication,_division)' && (
           <div className="tab-content">
-            <h2>User Authentication & Profiles</h2>
-            <p>Manage your user authentication & profiles here.</p>
+            <h2>Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)</h2>
+            <p>Manage your basic arithmetic operations (addition, subtraction, multiplication, division) here.</p>
           </div>
         )}
 
-        {activeTab === 'basic_&_advanced_calculations' && (
+        {activeTab === 'advanced_calculations_(square_roots,_exponents,_logarithms)' && (
           <div className="tab-content">
-            <h2>Basic & Advanced Calculations</h2>
-            <p>Manage your basic & advanced calculations here.</p>
+            <h2>Advanced Calculations (Square Roots, Exponents, Logarithms)</h2>
+            <p>Manage your advanced calculations (square roots, exponents, logarithms) here.</p>
           </div>
         )}
 
-        {activeTab === 'analytics_dashboard' && (
+        {activeTab === 'data_visualization_(graphs_and_charts_for_insights)' && (
           <div className="tab-content">
-            <h2>Analytics Dashboard</h2>
-            <p>Manage your analytics dashboard here.</p>
+            <h2>Data Visualization (Graphs and Charts for Insights)</h2>
+            <p>Manage your data visualization (graphs and charts for insights) here.</p>
           </div>
         )}
       </div>
