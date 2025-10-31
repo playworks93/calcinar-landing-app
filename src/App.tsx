@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthComponent from './components/AuthComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import AnalyticsDashboardComponent from './components/AnalyticsDashboardComponent'
-import CollaborationWorkspaceComponent from './components/CollaborationWorkspaceComponent'
-import HistoryComponent from './components/HistoryComponent'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import CalculatorButtons from './components/CalculatorButtons'
+import HistoryLog from './components/HistoryLog'
+import DataVisualization from './components/DataVisualization'
+import UserSettings from './components/UserSettings'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Profiles</li>
-          <li>Basic & Advanced Calculations</li>
-          <li>Analytics Dashboard</li>
-          <li>Real-time Collaboration Workspace</li>
-          <li>History & Recents Tracking</li>
-          <li>Customizable UI Themes</li>
+          <li>Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)</li>
+          <li>Advanced Calculations (Square Roots, Exponents, Logarithms)</li>
+          <li>Data Visualization (Graphs and Charts for Insights)</li>
+          <li>Collaboration Tools (Share Calculations and Workspaces)</li>
+          <li>History Log (Keep track of past calculations and results)</li>
+          <li>Customization Options (User preferences for UI and themes)</li>
           </ul>
         </div>
         <p>&copy; 2025 Calcinar. Built with React + TypeScript + Vite</p>
