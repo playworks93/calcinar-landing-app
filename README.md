@@ -4,12 +4,12 @@ Calcinar - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Profiles
-- Basic & Advanced Calculations
-- Analytics Dashboard
-- Real-time Collaboration Workspace
-- History & Recents Tracking
-- Customizable UI Themes
+- Basic Arithmetic Operations (Addition, Subtraction, Multiplication, Division)
+- Advanced Calculations (Square Roots, Exponents, Logarithms)
+- Data Visualization (Graphs and Charts for Insights)
+- Collaboration Tools (Share Calculations and Workspaces)
+- History Log (Keep track of past calculations and results)
+- Customization Options (User preferences for UI and themes)
 
 ## Tech Stack
 
