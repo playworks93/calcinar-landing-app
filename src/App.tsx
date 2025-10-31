@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthenticationComponent from './components/AuthenticationComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import AnalyticsDashboardComponent from './components/AnalyticsDashboardComponent'
-import CollaborationWorkspaceComponent from './components/CollaborationWorkspaceComponent'
-import HistoryComponent from './components/HistoryComponent'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import CalculatorButtons from './components/CalculatorButtons'
+import HistoryLog from './components/HistoryLog'
+import UserProfile from './components/UserProfile'
+import GraphingTool from './components/GraphingTool'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Onboarding</li>
-          <li>Advanced Calculation Capabilities</li>
-          <li>Data Analytics and Visualization</li>
-          <li>Collaborative Calculation Workspace</li>
-          <li>History and Favorites Save Feature</li>
-          <li>Real-time Calculation Sharing</li>
+          <li>Basic arithmetic operations (addition, subtraction, multiplication, division)</li>
+          <li>Scientific calculator functions (trigonometric, logarithmic, etc.)</li>
+          <li>Graphing capabilities for visual representation of functions</li>
+          <li>History log for previous calculations</li>
+          <li>User profiles for personalized settings and analytics</li>
+          <li>Collaboration tools to share calculations with other users</li>
           </ul>
         </div>
         <p>&copy; 2025 Calcinar. Built with React + TypeScript + Vite</p>
